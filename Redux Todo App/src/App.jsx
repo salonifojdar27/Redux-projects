@@ -7,9 +7,7 @@ function App() {
   return (
 
     <div style={{ padding: "30px" }}>
-      <h1>Todo App</h1>
       <Input />
-
     </div>
 
   )

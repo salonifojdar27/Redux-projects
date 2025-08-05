@@ -1,19 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
-const initialState = [{ title: "hello", status: true }]
+const initialState = []
 const todoSlice = createSlice({
     name: "Todos",
     initialState,
     reducers: {
-        Addtodo: (state) => {
-            state.push()
+        Addtodo: (state, action) => {
+            state.push({ text: action.payload, completed: false })
         },
-        RemoveTodo: (state) => {
-            state.splice()
-        }
     },
 });
 
-export default initialState.reducer
-export const { Addtodo, RemoveTodo, toggleTodo } = todoSlice.actions;
+export default todoSlice.reducer
+export const { Addtodo } = todoSlice.actions;
