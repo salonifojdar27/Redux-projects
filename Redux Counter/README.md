@@ -1,12 +1,30 @@
-# React + Vite
+<h1>🧮 Redux Counter App</h1>
+<p>A sleek and minimal counter application built with React ⚛️ and Redux Toolkit 🛠️ — the modern, official way to write Redux logic with less code and better structure.</p>
+<p>Effortlessly increment ➕ or decrement ➖ your counter with instant, smooth updates.</p>
+<br>
+<h1>✨ Features :</h1>
+<ul>
+  <li>➕ Increment & ➖ Decrement counter value</li>
+  <li>🗂 Centralized State Management with Redux</li>
+  <li>🎨 Clean UI</li>
+  <li>⚡ Lightweight & Fast performance/li>
+</ul>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br>
+<h1>🛠️ Tech Stack :</h1>
+<ul>
+  <li>⚛️ React – Component-based UI</li>
+  <li>🛠 Redux Toolkit – Simplified Redux logic & setup</li>
+  <li>🎨 CSS – Custom styling</li>
+</ul>
 
-Currently, two official plugins are available:
+<br>
+<h1>🎯 Purpose..</h1>
+<p>This project is a beginner-friendly example for learning Redux in React.
+It’s perfect for understanding actions, reducers, and the Redux store while keeping things simple and clean.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
+<h1>📸 Screenshot :</h1>
+<img width="1920" height="835" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/6817b70e-7688-41f6-8cc0-6926ebc83ccd" />
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
