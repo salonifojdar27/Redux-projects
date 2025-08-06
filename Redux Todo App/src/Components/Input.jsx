@@ -1,11 +1,11 @@
 
 import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { Addtodo } from "../features/TodoSlice"
+import { Addtodo, Removetodo } from "../features/TodoSlice"
 
 const Input = () => {
 
-    const [TextInput, setTextInput] = useState()
+    const [TextInput, setTextInput] = useState("")
     const disptach = useDispatch()
     const Todos = useSelector(state => state.Todos)
 
@@ -15,6 +15,11 @@ const Input = () => {
             setTextInput("");
         }
     }
+
+    function handleRemovetodo() {
+        disptach(Removetodo())
+    }
+
     return (
         <div className="container">
             <h1>Todo App</h1>
@@ -25,7 +30,8 @@ const Input = () => {
             <ul>
                 {Todos.map((todo) => (
                     <li key={todo.id}> {todo.text}
-                        <button className="delete-btn">Delete </button>
+                        <button onClick={() => handleRemovetodo(todo.id)} className="delete-btn">Delete </button>
+                        <button className="Edit-btn">Edit </button>
                     </li>
                 ))}
             </ul>
