@@ -8,15 +8,11 @@ function Counter() {
     const dispatch = useDispatch();
 
     return (
-        <div style={{ textAlign: 'center' }}>
-            <h2>Redux Toolkit Counter</h2>
+        <div className='counter-container'>
+            <h2>Redux Counter</h2>
             <h1>{count}</h1>
-
             <button onClick={() => dispatch(increment())}>+1</button>
-            <button onClick={() => dispatch(decrement())}>-1</button>
-
-            <br /><br />
-
+            <button disabled={count === 0} onClick={() => dispatch(decrement())}>-1</button>
 
         </div>
     );
