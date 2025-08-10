@@ -1,29 +1,28 @@
+
 import { createSlice } from "@reduxjs/toolkit";
 
-
-const initialState = []
 const todoSlice = createSlice({
     name: "Todos",
-    initialState,
+    initialState: [],
     reducers: {
         Addtodo: (state, action) => {
-            state.push({ text: action.payload, completed: false })
+            state.push({ id: Date.now(), text: action.payload });
         },
         Removetodo: (state, action) => {
-            const index = state.findIndex((todo) => todo.id === action.payload);
+            const index = state.findIndex(todo => todo.id === action.payload);
             if (index !== -1) {
                 state.splice(index, 1);
             }
         },
         Updatetodo: (state, action) => {
-            const { id, newtext } = action.payload;
-            const todo = state.find(T => T.id === id);
-            if (todo) {
-                todo.text = newtext;
+            const { id, newText } = action.payload;
+            const index = state.findIndex(todo => todo.id === id);
+            if (index !== -1) {
+                state[index].text = newText;
             }
         }
-    },
+    }
 });
 
-export default todoSlice.reducer
 export const { Addtodo, Removetodo, Updatetodo } = todoSlice.actions;
+export default todoSlice.reducer;
