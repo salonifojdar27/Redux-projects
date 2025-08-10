@@ -1,6 +1,5 @@
 <h1>📝 Todo App with Redux Toolkit & React 🚀</h1>
-<p>A simple yet powerful Todo App built using React and Redux Toolkit for state management.</p>
-<p>Easily add, edit, delete, and mark tasks as complete — all with a clean and responsive UI.</p>
+<p> A simple and efficient Todo Application built with React and Redux Toolkit, performing all CRUD operations (Create, Read, Update, Delete) in a single component. The delete operation is implemented using the splice() method for array manipulation.</p>
 <br>
 <h1>✨ Features :</h1>
 <ul>
@@ -17,5 +16,9 @@
   <li>🎨 CSS — Simple yet elegant styling.</li>
 </ul>
 <br>
+<h1>📂 Project Structure:</h1>
+<img width="1357" height="737" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/3a1750d8-9bd7-4eaa-a307-7485d9448379" />
+
+<br> <br>
 <h1>📸 Screenshot:</h1>
 <img width="1920" height="886" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/465a622a-087d-4847-9ed5-f4f2c1441a48" />
