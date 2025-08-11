@@ -22,3 +22,4 @@
 <br> <br>
 <h1>📸 Screenshot:</h1>
 <img width="1920" height="886" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/465a622a-087d-4847-9ed5-f4f2c1441a48" />
+<p>video:  https://drive.google.com/file/d/1Y8T8DR57e2PvD9cNYI6FT-YddHD-0pv4/view?usp=sharing</p>
