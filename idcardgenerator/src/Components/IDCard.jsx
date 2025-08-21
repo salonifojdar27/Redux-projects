@@ -24,7 +24,7 @@ function IDCard({ card = {}, onEdit }) {
       </div>
       <div className="flex justify-center gap-3 mt-4">
         <button onClick={() => onEdit(card)} className="px-4 py-2 rounded-lg bg-blue-500 text-white font-medium shadow hover:bg-blue-600 transition">Edit</button>
-        <button onClick={() => dispatch(deleteCard(card.id))} className="px-4 py-2 rounded-lg bg-red-500 text-white font-medium shadow hover:bg-red-600 transition">Delete</button>
+        <button onClick={() => dispatch(deleteCard(card.id))} className="px-4 py-2 rounded-lg bg-blue-500 text-white font-medium shadow hover:bg-red-600 transition">Delete</button>
       </div>
     </div>
 
