@@ -24,44 +24,17 @@ const Home = () => {
         <div className="p-6 max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-6 mb-6">
                 <SearchBar />
-                <button
-                    onClick={() => {
-                        setEditingCard(null); // 👈 नया card
-                        setIsOpen(true);
-                    }}
-                    className="px-4 py-2 bg-green-600 text-white rounded-2xl shadow hover:bg-green-700 md:w-auto mt-8"
-                >
-                    +Create
-                </button>
+                <button onClick={() => { setEditingCard(null); setIsOpen(true); }} className="px-4 py-2 bg-green-600 text-white rounded-2xl shadow hover:bg-green-700 md:w-auto mt-8"> +Create </button>
             </div>
 
             {isOpen && (
-                <IdForm
-                    editingCard={editingCard} // 👈 अब सही से pass किया
-                    onClose={() => {
-                        setEditingCard(null);
-                        setIsOpen(false);
-                    }}
-                />
-            )}
+                <IdForm editingCard={editingCard} onClose={() => { setEditingCard(null); setIsOpen(false); }} />)}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {filtered.length > 0 ? (
                     filtered.map((idCard) => (
-                        <IDCard
-                            key={idCard.id}
-                            card={idCard}
-                            onEdit={(card) => {
-                                setEditingCard(card); // 👈 edit mode activate
-                                setIsOpen(true);
-                            }}
-                        />
-                    ))
-                ) : (
-                    <p className="col-span-3 text-center text-gray-500">
-                        No members found
-                    </p>
-                )}
+                        <IDCard key={idCard.id} card={idCard} onEdit={(card) => { setEditingCard(card); setIsOpen(true); }} />)))
+                    : (<p className="col-span-3 text-center text-gray-500"> No members found  </p>)}
             </div>
         </div>
     );
