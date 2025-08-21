@@ -1,12 +1,25 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1>🪪 ID Card Generator</h1>
+<p>The ID Card Generator is a React-based web application that allows users to create, edit, and delete ID cards with ease. It provides a simple form where users can enter personal details like name, designation, contact info, and photo, and then instantly generate a professional-looking ID card.</p>
 
-Currently, two official plugins are available:
+<br>
+<h1>✨ Features :</h1>
+<ul>
+  <li>➕ Add New ID Card – Fill out a form to generate an ID card.</li>
+  <li>✏️ Edit Existing Card – Update details anytime.</li>
+  <li>❌ Delete Card – Remove any card using a delete button.</li>
+  <li>🔍 Search & Filter (optional) – Quickly find a specific card.</li>
+</ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
 
-## Expanding the ESLint configuration
+<h1>🛠️ Tech Stack : <h1>
+<ul>
+    <li>React.js – Frontend framework</li>
+    <li>Redux Toolkit – State management</li>
+    <li>Tailwind CSS</li>
+</ul>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<br>
+
+<h1>📸 Preview : </h1>
