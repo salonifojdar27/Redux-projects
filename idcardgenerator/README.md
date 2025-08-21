@@ -12,14 +12,18 @@
 </ul>
 
 <br>
-
-<h1>🛠️ Tech Stack : <h1>
-<ul>
-    <li>React.js – Frontend framework</li>
-    <li>Redux Toolkit – State management</li>
-    <li>Tailwind CSS</li>
-</ul>
-
-<br>
+ <h1> Teck Stack :</h1>
+   <ul>
+     <li>React.js.</li>
+     <li>Redux Toolkit.</li>
+     <li>Tailwindcss</li>
+   </ul>
+<br> 
+<h1>📂 Folder Structure :</h1>
+<img width="735" height="798" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/7fa47fc7-cc38-4855-a76e-d8209bdffc4b" />
+<br> <br>
 
 <h1>📸 Preview : </h1>
+<img width="1920" height="860" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/65263eda-8dc8-42cc-bf59-156cf626cf40" />
+<img width="1920" height="867" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/78f487c1-3f97-4039-b334-15ea4c97d8fc" />
+<p> Video : https://drive.google.com/file/d/1nGPcYLp0p18eKUHZDpVUqSUkONlt4-8N/view?usp=sharing</p>
