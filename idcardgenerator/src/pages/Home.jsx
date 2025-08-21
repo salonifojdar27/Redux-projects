@@ -1,5 +1,4 @@
 
-
 import SearchBar from '../Components/SearchBar'
 import { useState, useMemo } from 'react';
 import { useSelector } from "react-redux";
@@ -8,7 +7,7 @@ import IDCard from '../Components/IDCard';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [editingCard, setEditingCard] = useState(null); // 👈 camelCase
+    const [editingCard, setEditingCard] = useState(null); 
     const { list, searchQuery } = useSelector((state) => state.idCards);
 
     const filtered = useMemo(() => {
