@@ -11,25 +11,25 @@ const idCardSlice = createSlice({
     name: "idCards",
     initialState,
     reducers: {
-        addCard: (state, action) =>
+        addCard: (state, action) => {
             state.list.push({ id: Date.now(), ...action.payload })
-    },
-    deleteCard: (state, action) => {
-        // return state.filter(card => card.id !== action.payload);
-        const index = state.findIndex(card => card.id === action.payload);
-        if (index !== -1) {
-            state.list.splice(index, 1);
-        }
-    },
-    updateCard: (state, action) => {
-        const { id, updatedData } = action.payload;
-        const index = state.findIndex(card => card.id === id);
-        if (index !== -1) {
-            state[index] = { ...state[index], ...updatedData };
-        }
-    },
-    setSearchQuery: (state, action) => {
-        state.searchQuery = action.payload;
+        },
+
+        deleteCard: (state, action) => {
+            const index = state.list.findIndex(card => card.id === action.payload);
+            if (index !== -1) {
+                state.list.splice(index, 1);
+            }
+        },
+        updateCard: (state, action) => {
+            const index = state.list.findIndex((card) => card.id === action.payload.id);
+            if (index !== -1) {
+                state.list[index] = action.payload;
+            }
+        },
+        setSearchQuery: (state, action) => {
+            state.searchQuery = action.payload;
+        },
     },
 }
 );
