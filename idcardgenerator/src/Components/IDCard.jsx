@@ -1,11 +1,5 @@
 
-import { useDispatch } from "react-redux";
-import { deleteCard } from "../features/idcardSlice";
-
-
-function IDCard({ card = {}, onEdit }) {
-
-  const dispatch = useDispatch();
+function IDCard({ card = {} }) {
 
   return (
 
@@ -21,10 +15,6 @@ function IDCard({ card = {}, onEdit }) {
         </h3>
         <p className="text-gray-600">Role : {card?.role || "No Role"}</p>
         <p className="text-gray-500 text-sm">Email : {card?.email || "No Email"}</p>
-      </div>
-      <div className="flex justify-center gap-3 mt-4">
-        <button onClick={() => onEdit(card)} className="px-4 py-2 rounded-lg bg-blue-500 text-white font-medium shadow hover:bg-blue-600 transition">Edit</button>
-        <button onClick={() => dispatch(deleteCard(card.id))} className="px-4 py-2 rounded-lg bg-blue-500 text-white font-medium shadow hover:bg-red-600 transition">Delete</button>
       </div>
     </div>
 
