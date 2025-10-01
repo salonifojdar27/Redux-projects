@@ -5,13 +5,12 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAM6HK0mTMcUor6wsiP4LevagXpORxQmDE",
-    authDomain: "chatapp-clone-b2629.firebaseapp.com",
-    projectId: "chatapp-clone-b2629",
-    storageBucket: "chatapp-clone-b2629.firebasestorage.app",
-    messagingSenderId: "985435764792",
-    appId: "1:985435764792:web:70befe56dc86fb32808ecd",
-    measurementId: "G-H7W87JLR8Z"
+    apiKey: "AIzaSyAQ8Ur3750CIGq6mXqsKVS06IKrS_Ws1H0",
+    authDomain: "chat-app---clone.firebaseapp.com",
+    projectId: "chat-app---clone",
+    storageBucket: "chat-app---clone.firebasestorage.app",
+    messagingSenderId: "141515053319",
+    appId: "1:141515053319:web:bcf09ec745a978ff804da2"
 };
 
 const app = initializeApp(firebaseConfig);
