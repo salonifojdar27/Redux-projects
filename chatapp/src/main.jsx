@@ -1,14 +1,30 @@
+import React from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import { BrowserRouter } from 'react-router'
 import { Provider } from 'react-redux'
-import store from './Store/store.js'
+import { BrowserRouter } from 'react-router-dom'
+import App from './App'
+import store from "./Store/store"
+import './index.css'
+import { auth } from './Firebase/Firebase'
+import { onAuthStateChanged } from "firebase/auth"
+import { setUser, clearUser } from "./Features/authSlice"
+
+// subscribe to auth state and dispatch to redux
+onAuthStateChanged(auth, user => {
+  if (user) {
+    store.dispatch(setUser({ uid: user.uid, email: user.email, displayName: user.displayName }))
+  } else {
+    store.dispatch(clearUser())
+  }
+})
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
-  </BrowserRouter>
+  </React.StrictMode>
 )
+

@@ -8,5 +8,100 @@ body {
   height: 100%;
   background-color: #e5e7eb;
   overflow-x: hidden;
-  /* remove horizontal scroll */
+}
+
+body {
+  font-family: Inter, system-ui, Arial;
+  margin: 0;
+  background: #f3f4f6;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  gap: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: auto;
+}
+
+.content {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user:hover {
+  background: #f8fafc;
+}
+
+.message {
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  max-width: 65%;
+}
+
+.message.me {
+  background: #dcf8c6;
+  margin-left: auto;
+}
+
+.message.them {
+  background: #f1f5f9;
+  margin-right: auto;
+}
+
+.messages {
+  flex: 1;
+  overflow: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputRow {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: white
+}
+
+button[disabled] {
+  background: #94a3b8
 }

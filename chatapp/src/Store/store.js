@@ -1,13 +1,12 @@
-import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "../Features/UserSlice";
-import chatReducer from "../Features/ChatSlice"
-
+import { configureStore } from '@reduxjs/toolkit'
+import chatReducer from '../Features/chatSlice'
+import authReducer from "../Features/authSlice"
 
 const store = configureStore({
     reducer: {
-        users: userReducer,
-        chats: chatReducer,
-    },
+        chat: chatReducer,
+        auth: authReducer
+    }
 })
 
-export default store;
+export default store

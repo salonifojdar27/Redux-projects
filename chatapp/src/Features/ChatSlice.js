@@ -1,15 +1,23 @@
 
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit'
 
-const chatSlice = createSlice({
-    name: "chats",
-    initialState: { selectedUser: null },
+const initialState = {
+    activeChatUser: null, // { id, name }
+    // UI state only; messages are fetched live from Firestore in components
+}
+
+const slice = createSlice({
+    name: 'chat',
+    initialState,
     reducers: {
-        setSelectedUser: (state, action) => {
-            state.selectedUser = action.payload;
+        setActiveChat(state, action) {
+            state.activeChatUser = action.payload
         },
-    },
-});
+        clearActiveChat(state) {
+            state.activeChatUser = null
+        }
+    }
+})
 
-export const { setSelectedUser } = chatSlice.actions;
-export default chatSlice.reducer;
+export const { setActiveChat, clearActiveChat } = slice.actions
+export default slice.reducer
